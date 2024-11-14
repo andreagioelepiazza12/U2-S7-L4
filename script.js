@@ -27,8 +27,13 @@ function loadImages() {
       .then(data => {
         console.log(data);
         
-        const divArray = Array.from(document.querySelectorAll(".card.mb-4.shadow-sm"));
+        const divArray = Array.from(document.querySelectorAll("img"));
         console.log(divArray);
+
+        for(let i = 0; i<divArray.length; i++){
+            divArray[i].src = data.photos[i].url;
+        }
+        
 
       })
 
