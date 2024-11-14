@@ -29,7 +29,7 @@ function loadImages() {
         console.log(divArray);
 
         for(let i = 0; i<divArray.length; i++){
-            divArray[i].src = data.photos[i].url;
+            divArray[i].src = data.photos[i].src.landscape;
         }
         
 
@@ -65,7 +65,8 @@ function loadSecondImages() {
         console.log(divArray);
 
         for(let i = 0; i<divArray.length; i++){
-            divArray[i].src = data.photos[i].url;
+            divArray[i].src = data.photos[i].src.landscape;
+            console.log(data.photos[i].url)
         }
         
 
